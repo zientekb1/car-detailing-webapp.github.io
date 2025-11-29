@@ -1,0 +1,48 @@
+h1, h2 {
+         color: #0b3d91;
+         font-family: 'Montserrat', sans-serif;
+      }
+
+      /* box model */
+      table {
+         width: 100%;
+         margin: 20px;
+         padding: 10px;
+         border: 2px solid;
+      }
+
+      /* box model */
+      ul {
+         background-color: #1a1a1a;
+         padding: 20px 20px 20px 60px;
+         margin: 10px;
+      }
+
+      /* box model */
+      th, td {
+         padding: 8px;
+         border: 1px solid blue;
+         box-shadow: 0 0 5px;
+      }
+
+
+      /* hover animation */
+      table:hover {
+         transform: scale(1.01);
+         transition: transform 0.3s ease;
+         box-shadow: 0 0 15px darkblue;
+      }
+
+      a {
+         padding: 20px 20px;
+         margin: 10px;
+      }
+      a:hover {
+         color: red;
+
+      }
+      body {
+        background-color: #000; 
+        color: #f0f0f0; 
+        font-family: 'Lato', "sans-serif";
+      }
