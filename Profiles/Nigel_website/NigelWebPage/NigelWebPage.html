@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset = "utf-8">
+    <title>Intro Website</title>
+    <!-- <link rel='stylesheet' href='style.css'> -->
+  </head>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .p1 {
+      font-family: "Brush Script MT", Times, serif;
+      color: red;
+    }
+
+    .p2 {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .p3 {
+      font-family: "Comic Sans MS", "Courier New", monospace;
+      color: DarkViolet;
+    }
+    
+    li {
+      font-family: "Comic Sans MS", "Courier New", monospace;
+      color: DarkViolet;
+    }
+    
+    table, th, td {
+      border: 1px solid black;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    
+    button {
+      padding: 10px;
+      margin: 0 50px;
+      font-family: Georgia;
+      font-color: aqua;
+    }
+
+    div {
+      width: 50%;
+      height: 12%;
+      padding: 15px;
+      border: 7px solid salmon;
+      margin-left: 70px;
+      animation-name: expandBox;
+      animation-duration: 2s;
+      animation-direction: reverse; 
+      animation-fill-mode: backwards;
+    }
+
+  /*body {
+      margin-left: 25%;
+      margin-right: 10%;
+    }
+*/
+    @media only screen and (max-width: 600px) {
+      div {
+        width: 95%;
+        height: 12%;
+        padding: 15px;
+        border: 7px solid green;
+        margin-left: 0px;
+        animation-name: shrinkBox;
+        animation-duration: 2s;
+        animation-direction: backwards; 
+        animation-fill-mode: both;
+      }
+      body {
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+    }
+    
+    @keyframes expandBox {
+      0% {
+        width: 50%;
+        height: 12%;
+        padding: 15px;
+        border: 7px solid salmon;
+        margin-left: 70px;
+      }
+      100% {
+        width: 95%;
+        height: 12%;
+        padding: 15px;
+        border: 7px solid green;
+        margin-left: 0px;
+      }
+    }
+
+    @keyframes shrinkBox {
+
+      0% {
+        width: 95%;
+        height: 12%;
+        padding: 15px;
+        border: 7px solid green;
+        margin-left: 0px;
+      }
+      100%   {
+        width: 50%;
+  	height: 12%;
+  	padding: 15px;
+  	border: 7px solid salmon;
+  	margin-left: 70px;
+      }
+    }
+  </style>
+
+  <script>
+    function simpleMessage() {
+    alert("At some point I'll make this website not ugly. For now it simply checks all the boxes.")
+    }
+  </script>
+
+  <body>
+
+    <button onclick="simpleMessage()">Button that calls a JavaScript function</button>
+
+    <h1 class="p1">Howdy, I'm Nigel Flowers</h1>
+
+    <img src = "IMG_5255.jpg" width = "373" height = "406" alt = "picture of a Nigel Flowers" />  
+    
+    <div>
+      <p class="p3">
+I'm going to copy paste a part of my biosketch: Fourth year undergraduate student pursuing a Bachelor of Science in computer science, with an emphasis on cybersecurity. Peer Leader and Peer Mentor for Scholars Academy. Knowledge of coding querying languages such as Python, C++, Java, and SQL. Ability to manage databases, order and clean datasets, and create user interfaces, in addition to generating in-depth cybersecurity analyses to resolve vulnerabilities, prevent attacks, and ensure proper data integrity and backups. 
+      </p>
+
+      <p class="p3">
+I have two dogs, they are both Corgies. Their names are Snoop and Meapo (I call her Stink). During peach season I make peach cobbler every week, that is assuming that yellow peaches have been purchace from the store. I am indeed quite fond of baking, cooking, reading, gaming, and drawing. I am still learing the fundamentals of drawing and I offten lament that I should have started drawing when I started baking.
+      </p>
+
+      <p class="p3">
+It is going to be Halloween soon, the perfect time to watch scary movies. When it comes to movie night I seem to be the only one in my family that will choose a horror movie, this leads to me picking out a horror movie each movie night. I have a list of movies I want to watch and that list it mostly composed of horror movies. I never did beat Dark Souls, yet Solaire of Astora is my profile picture. I have beaten all the other Soulsborne games FromSoft has made.
+      </p>
+    </div>
+
+
+
+    <p>
+      <img src = "BuringSunBro.jpg" width = "92" height = "120" alt = "picture of a Solaire of Astora" />        
+    </p>
+
+    <p>
+      <a href = "https://www.spacejam.com/1996/jam.htm">
+        here have a link to the SpaceJam 1996 website.
+      </a>
+    </p>
+    <h2 class="p3">
+      Goods I baked the most during the summer
+    </h2>      
+    <ol class="p2">
+      <li>Peach Cobbler</li>
+      <li>Blueberry Muffins</li>
+      <li>Snickerdoodle Cookies</li>
+      <li>Chocolatechip Cookies</li>
+    </ol>
+
+    <table class="p2">
+      <tr>
+        <th>Movie Title</th>
+        <th>Date Released</th>
+        <th>Personal Rating</th>
+      </tr>
+      <tr>
+        <td>Audition</td>
+        <td>1999</td>
+        <td>5/5</td>
+      </tr>
+      <tr>
+        <td>Army of Darkness</td>
+        <td>1992</td>
+        <td>5/5</td>
+      </tr>
+      <tr>
+        <td>Doom</td>
+        <td>2005</td>
+        <td>1/5</td>
+      </tr>
+      <tr>
+        <td>Malignant</td>
+        <td>2021</td>
+        <td>3/5</td>
+      </tr>
+    </table>
+
+    <p>
+      <h2 class="p1">
+        Would you like to recommend any movies or baked goods?
+      </h2>
+      <form method = "post" action = "">
+        <!-- <input type = "text"> inserts a text field -->
+        <p class="p2">
+          <label>Movie Title:
+            <input movieTitle = "movieTitle" type = "text" size = "50" maxlength = "30">
+          </label>
+          <br>
+          <label>
+            Name of Baked Good:
+            <input movieTitle = "bakedGood" type = "text" size = "35 maxlength = "30">
+          </label>
+        </p>
+        <p class="p2">
+          <input type = "submit" value = "Submit">
+          <input type = "reset" value = "Clear">
+        </p> 
+    
+      </form>
+    </p>
+  </body>
+</html>

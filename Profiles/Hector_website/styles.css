@@ -1,0 +1,47 @@
+body{
+    background-image: url(0101.jpg);
+    text-align: center;
+}
+
+p{
+    font-family: monospace;
+    color: red;
+}
+
+li{
+    font-family: fantasy;
+    color:blueviolet;
+}
+
+div{
+    width: 50%;
+    position: relative;
+    left: 25%;
+    border-width: 6px;
+    border-style: dashed;
+    color: black;
+}
+
+ul {
+    list-style: inside;
+    padding-left: 0;  
+}
+
+@media (max-width: 600px) {
+    body {
+        background-color: lightgray; 
+        background-image: none; 
+    }
+
+    p {
+        color: green;
+    }
+
+    li {
+        color: orange;
+    }
+
+    div {
+        border-color: red;
+    }
+}
